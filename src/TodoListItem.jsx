@@ -1,10 +1,8 @@
-// Move List Item into New "Todo List Item" Component
-
 import React from 'react';
 
-function TodoListItem(props) {
+function TodoListItem({ todo }) {
     return (
-        <li key={props.todo.id}>{props.todo.title}</li>
+        <li key={todo.id}>{todo.title}</li>
     )
 }
 
